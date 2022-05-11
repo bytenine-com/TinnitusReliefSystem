@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AppThemeNoTitle2"
+    android:background="@drawable/gradient_bkg"
+    tools:context=".ui.Home"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toTopOf="parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/page_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/title"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/inter_regular"
+            android:gravity="center"
+            android:lines="1"
+            android:textColor="@color/colorAccent2"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="@+id/page_title"
+
+            android:text="Tinnitus Relief System" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/gradient_light_bkg"
+        android:orientation="horizontal"
+        android:paddingStart="0dp"
+        android:paddingTop="0dp"
+        android:paddingEnd="0dp"
+        android:paddingBottom="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/page_title">
+
+        <TextView
+            android:id="@+id/card1_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="15dp"
+            android:foregroundGravity="top"
+            android:lines="1"
+            android:text="Welcome"
+            android:textAppearance="@style/AppTheme2"
+            android:textColor="@color/colorAccent2"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/card1_text"
+            app:layout_constraintEnd_toEndOf="@+id/card1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/card1_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:alpha="0.6"
+            android:foregroundGravity="center_horizontal"
+            android:text="This app will help you to live with your tinnitus, and even getting better from your tinnitus. These treatments and tools will help you take control over your tinnitus, and enable you to not see it as a problem."
+            android:textAppearance="@style/AppTheme2"
+            android:textColor="@color/colorAccent2"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/play_pause"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card1_title" />
+
+        <ImageView
+            android:id="@+id/play_pause"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:foregroundGravity="center_vertical"
+            android:scaleX="1"
+            android:scaleY="1"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/gradient_light_bkg"
+        android:orientation="horizontal"
+        android:paddingStart="0dp"
+        android:paddingTop="0dp"
+        android:paddingEnd="0dp"
+        android:paddingBottom="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card1">
+
+        <TextView
+            android:id="@+id/card2_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="15dp"
+            android:foregroundGravity="top"
+            android:lines="1"
+            android:text="Treatment and Relief"
+            android:textAppearance="@style/AppTheme2"
+            android:textColor="@color/colorAccent2"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/card2_text"
+            app:layout_constraintEnd_toEndOf="@+id/card2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/card2_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:alpha="0.6"
+            android:foregroundGravity="center_horizontal"
+            android:text="First step to treat tinnitus is learning what tinnitus is, and how to live with it. Go to the Tools section to get the information you need to understad tinnitus."
+            android:textAppearance="@style/AppTheme2"
+            android:textColor="@color/colorAccent2"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toTopOf="@+id/card2_text2"
+            app:layout_constraintEnd_toEndOf="@+id/card2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card2_title" />
+
+        <TextView
+            android:id="@+id/card2_text2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:alpha="0.6"
+            android:foregroundGravity="center_horizontal"
+            android:text="Second step is to give you real world sounds, that you can listen to when you are in a silent environment, or you need relief. This will give your brain what it is missing and therfore prevent tinnitus. We do not reccomend static 'noise' sounds. Go to the Sound section to get high quality real world ambient sounds."
+            android:textAppearance="@style/AppTheme2"
+            android:textColor="@color/colorAccent2"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/card2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card2_text" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="80dp"
+                android:background="@drawable/gradient_light_bkg"
+                android:orientation="horizontal"
+                android:paddingStart="0dp"
+                android:paddingTop="0dp"
+                android:paddingEnd="0dp"
+                android:paddingBottom="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card2">
+
+                <TextView
+                    android:id="@+id/card3_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:foregroundGravity="top"
+                    android:lines="1"
+                    android:text="Measure and Track"
+                    android:textAppearance="@style/AppTheme2"
+                    android:textColor="@color/colorAccent2"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/card3_text"
+                    app:layout_constraintEnd_toEndOf="@+id/card3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/card3_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:alpha="0.6"
+                    android:foregroundGravity="center_horizontal"
+                    android:text="You can measure and track your subjective level of discomfort, by using the medically standarized method THI (Tinnitus Handicap Inventory)"
+                    android:textAppearance="@style/AppTheme2"
+                    android:textColor="@color/colorAccent2"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toTopOf="@+id/card3_text2"
+                    app:layout_constraintEnd_toEndOf="@+id/card3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/card3_title" />
+
+                <TextView
+                    android:id="@+id/card3_text2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:alpha="0.6"
+                    android:foregroundGravity="center_horizontal"
+                    android:text="We will also add the possibility to measure SOC (Sense of Coherence) to track how you are coping with your tinnitus"
+                    android:textAppearance="@style/AppTheme2"
+                    android:textColor="@color/colorAccent2"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/card3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/card3_text" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+        app:menu="@menu/bottom_navigation_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:itemBackground="@color/colorPrimary2"
+        app:itemIconTint="@drawable/nav_item_color"
+        app:itemTextColor="@drawable/nav_item_color"
+        android:background="@color/colorPrimary2"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

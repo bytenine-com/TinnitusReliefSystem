@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/willy/OneDrive - bytenine.com/byteNine/android/TinnitusRelief/Application/src/main/res/drawable-hdpi/ic_all_toggle.xml" value="0.49128205128205127" />
+        <entry key="..\:/Users/willy/OneDrive - bytenine.com/byteNine/android/TinnitusRelief/Application/src/main/res/drawable-hdpi/ic_fav_toggle.xml" value="0.49128205128205127" />
+        <entry key="..\:/Users/willy/OneDrive - bytenine.com/byteNine/android/TinnitusRelief/Application/src/main/res/drawable-mdpi/seekbar_bkg.xml" value="0.3375" />
+        <entry key="..\:/Users/willy/OneDrive - bytenine.com/byteNine/android/TinnitusRelief/Application/src/main/res/drawable-xhdpi/gradient_light_bkg.xml" value="0.3458333333333333" />
+        <entry key="..\:/Users/willy/OneDrive - bytenine.com/byteNine/android/TinnitusRelief/Application/src/main/res/drawable/custom_progress.xml" value="0.3458333333333333" />
+        <entry key="..\:/Users/willy/OneDrive - bytenine.com/byteNine/android/TinnitusRelief/Application/src/main/res/drawable/gradient_bkg.xml" value="0.3458333333333333" />
+        <entry key="..\:/Users/willy/OneDrive - bytenine.com/byteNine/android/TinnitusRelief/Application/src/main/res/drawable/ic_baseline_stop_24.xml" value="0.3234375" />
+        <entry key="..\:/Users/willy/OneDrive - bytenine.com/byteNine/android/TinnitusRelief/Application/src/main/res/drawable/ic_play_pause_toggle.xml" value="0.3375" />
+        <entry key="..\:/Users/willy/OneDrive - bytenine.com/byteNine/android/TinnitusRelief/Application/src/main/res/drawable/ic_playpng.xml" value="0.3375" />
+        <entry key="..\:/Users/willy/OneDrive - bytenine.com/byteNine/android/TinnitusRelief/Application/src/main/res/drawable/ic_seekline.xml" value="0.3458333333333333" />
+        <entry key="..\:/Users/willy/OneDrive - bytenine.com/byteNine/android/TinnitusRelief/Application/src/main/res/drawable/nav_item_color.xml" value="0.2994791666666667" />
+        <entry key="..\:/Users/willy/OneDrive - bytenine.com/byteNine/android/TinnitusRelief/Application/src/main/res/layout/activity_home.xml" value="0.4828125" />
+        <entry key="..\:/Users/willy/OneDrive - bytenine.com/byteNine/android/TinnitusRelief/Application/src/main/res/layout/activity_main.xml" value="0.47983310152990266" />
+        <entry key="..\:/Users/willy/OneDrive - bytenine.com/byteNine/android/TinnitusRelief/Application/src/main/res/layout/activity_main_fragment.xml" value="0.5" />
+        <entry key="..\:/Users/willy/OneDrive - bytenine.com/byteNine/android/TinnitusRelief/Application/src/main/res/layout/activity_settings.xml" value="0.2833333333333333" />
+        <entry key="..\:/Users/willy/OneDrive - bytenine.com/byteNine/android/TinnitusRelief/Application/src/main/res/layout/activity_tools.xml" value="0.2833333333333333" />
+        <entry key="..\:/Users/willy/OneDrive - bytenine.com/byteNine/android/TinnitusRelief/Application/src/main/res/layout/fragment_home.xml" value="0.4322916666666667" />
+        <entry key="..\:/Users/willy/OneDrive - bytenine.com/byteNine/android/TinnitusRelief/Application/src/main/res/layout/item_layout.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/willy/OneDrive - bytenine.com/byteNine/android/TinnitusRelief/Application/src/main/res/menu/bottom_navigation_menu.xml" value="0.4973544973544973" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.22" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

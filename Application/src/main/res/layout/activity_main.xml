@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:id="@+id/frameLayout"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                            style="@style/AppThemeNoTitle2"
+                                            android:background="@drawable/gradient_bkg"
+                                             
+                                            tools:context=".ui.MainActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/page_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+    <TextView
+        android:id="@+id/title"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/inter_regular"
+        android:gravity="center"
+        android:lines="1"
+        android:textColor="@color/colorAccent2"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@+id/page_title"
+
+        android:text="Sound Player" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/list_select"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/page_title">
+
+        <ImageView
+            android:id="@+id/all_button"
+            android:layout_width="170dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="30dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_all_toggle"
+            app:layout_constraintBottom_toBottomOf="@+id/list_select"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/list_select"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/fav_button"
+            android:layout_width="170dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="30dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_fav_toggle"
+            app:layout_constraintBottom_toBottomOf="@+id/list_select"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/list_select"
+            tools:ignore="ContentDescription" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/media_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_select"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/media_info"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:alpha="1"
+        android:src="#00000000"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/seekbar_audio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription">
+        <ImageView
+            android:id="@+id/album_art_bk"
+            android:background="@android:color/transparent"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="9dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/cover_shadow_512"
+            app:layout_constraintBottom_toBottomOf="@+id/media_info"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/media_info"
+            tools:ignore="ContentDescription" />
+        <ImageView
+            android:id="@+id/album_art"
+            android:background="@android:color/transparent"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="24dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="@+id/media_info"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/media_info"
+            tools:ignore="ContentDescription" />
+
+
+
+        <TextView
+            android:id="@+id/song_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:textAppearance="@style/AppTheme2"
+            android:textColor="@color/colorAccent2"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:gravity="start"
+            android:lines="1"
+            android:background="@android:color/transparent"
+
+            app:layout_constraintBottom_toTopOf="@+id/song_artist"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/album_art"
+            app:layout_constraintTop_toTopOf="@+id/album_art"
+            tools:text="Song Title" />
+
+        <TextView
+            android:id="@+id/song_artist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:gravity="start"
+            android:lines="1"
+            android:paddingBottom="12dp"
+            android:background="@android:color/transparent"
+            android:textAppearance="@style/AppTheme2"
+            android:textColor="@color/colorAccent2"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/album_art"
+            app:layout_constraintTop_toBottomOf="@+id/song_title"
+            tools:text="Song Artist" />
+
+        <ImageView
+            android:id="@+id/button_fav"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+
+
+            android:src="@drawable/fav_unselected"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="@+id/media_info"
+
+            app:layout_constraintStart_toEndOf="@+id/album_art_bk"
+            app:layout_constraintTop_toBottomOf="@+id/song_artist" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <com.bytenine.tinnitusrelief.ui.MediaSeekBar
+        android:id="@+id/seekbar_audio"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+      android:background="@android:color/transparent"
+        android:indeterminate="false"
+        android:minHeight="2dp"
+        android:maxHeight="2dp"
+
+
+        android:indeterminateDrawable="@drawable/custom_progress"
+        android:indeterminateOnly="false"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:progressDrawable="@drawable/custom_progress"
+        android:splitTrack="false"
+        android:textColor="@color/colorAccent2"
+        android:thumb="@drawable/seekbarthumb4x2"
+        android:thumbOffset="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/media_controls"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/media_controls"
+        android:layout_width="192dp"
+        android:layout_height="130dp"
+        android:alpha="1"
+        android:src="#00000000"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/button_previous"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/label_previous"
+        android:src="@drawable/prev"
+        android:text=""
+
+        app:layout_constraintBottom_toBottomOf="@+id/media_controls"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/media_controls" />
+
+    <ImageView
+        android:id="@+id/button_play"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/label_play_pause"
+        android:src="@drawable/ic_play_pause_toggle"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/media_controls"
+        app:layout_constraintEnd_toEndOf="@+id/media_controls"
+        app:layout_constraintStart_toEndOf="@+id/button_previous"
+        app:layout_constraintTop_toTopOf="@+id/media_controls" />
+
+    <ImageView
+        android:id="@+id/button_next"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/label_next"
+        android:src="@drawable/next"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/media_controls"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_play"
+        app:layout_constraintTop_toTopOf="@+id/media_controls" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".2" />
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+        app:menu="@menu/bottom_navigation_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:itemBackground="@color/colorPrimary2"
+        app:itemIconTint="@drawable/nav_item_color"
+        app:itemTextColor="@drawable/nav_item_color"
+        android:background="@color/colorPrimary2"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

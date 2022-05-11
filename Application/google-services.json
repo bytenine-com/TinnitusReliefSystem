@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "970994001790",
+    "project_id": "tinnitus-relief-system",
+    "storage_bucket": "tinnitus-relief-system.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:970994001790:android:9f982a03597705a300352f",
+        "android_client_info": {
+          "package_name": "com.bytenine.tinnitusrelief"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "970994001790-matk4jtga6f765md8kpee1so1uttqvv7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTTMZH21H6RpzFlY52mZb7mx6NPDZkOdY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "970994001790-matk4jtga6f765md8kpee1so1uttqvv7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
