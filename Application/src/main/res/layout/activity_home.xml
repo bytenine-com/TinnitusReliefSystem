@@ -67,13 +67,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/page_title">
 
+        <ImageView
+            android:id="@+id/bkg"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:alpha="0.1"
+
+
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/happy"
+            app:layout_constraintBottom_toBottomOf="@id/card1"
+            app:layout_constraintEnd_toEndOf="@+id/card1"
+            app:layout_constraintStart_toStartOf="@+id/card1"
+            app:layout_constraintTop_toTopOf="@id/card1" />
+
         <TextView
             android:id="@+id/card1_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="15dp"
             android:foregroundGravity="top"
@@ -95,12 +111,13 @@
             android:layout_gravity="top"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginBottom="20dp"
-            android:alpha="0.6"
+            android:layout_marginBottom="30dp"
+            android:alpha="1"
             android:foregroundGravity="center_horizontal"
             android:text="This app will help you to live with your tinnitus, and even getting better from your tinnitus. These treatments and tools will help you take control over your tinnitus, and enable you to not see it as a problem."
             android:textAppearance="@style/AppTheme2"
             android:textColor="@color/colorAccent2"
+
             android:textSize="16sp"
             android:textStyle="normal"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -142,6 +159,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/card1">
 
+        <ImageView
+            android:id="@+id/bkg2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:alpha="0.1"
+
+
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/happy2"
+            app:layout_constraintBottom_toBottomOf="@id/card2"
+            app:layout_constraintEnd_toEndOf="@+id/card2"
+            app:layout_constraintStart_toStartOf="@+id/card2"
+            app:layout_constraintTop_toTopOf="@id/card2" />
+
         <TextView
             android:id="@+id/card2_title"
             android:layout_width="0dp"
@@ -171,7 +204,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="20dp"
-            android:alpha="0.6"
+            android:alpha="1"
             android:foregroundGravity="center_horizontal"
             android:text="First step to treat tinnitus is learning what tinnitus is, and how to live with it. Go to the Tools section to get the information you need to understad tinnitus."
             android:textAppearance="@style/AppTheme2"
@@ -191,7 +224,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="20dp"
-            android:alpha="0.6"
+            android:alpha="1"
             android:foregroundGravity="center_horizontal"
             android:text="Second step is to give you real world sounds, that you can listen to when you are in a silent environment, or you need relief. This will give your brain what it is missing and therfore prevent tinnitus. We do not reccomend static 'noise' sounds. Go to the Sound section to get high quality real world ambient sounds."
             android:textAppearance="@style/AppTheme2"
@@ -227,6 +260,22 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/card2">
 
+                <ImageView
+                    android:id="@+id/bkg3"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+
+                    android:alpha="0.2"
+
+
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/happy3"
+                    app:layout_constraintBottom_toBottomOf="@id/card3"
+                    app:layout_constraintEnd_toEndOf="@+id/card3"
+                    app:layout_constraintStart_toStartOf="@+id/card3"
+                    app:layout_constraintTop_toTopOf="@id/card3" />
+
                 <TextView
                     android:id="@+id/card3_title"
                     android:layout_width="0dp"
@@ -256,7 +305,7 @@
                     android:layout_marginStart="24dp"
                     android:layout_marginEnd="20dp"
                     android:layout_marginBottom="20dp"
-                    android:alpha="0.6"
+                    android:alpha="1"
                     android:foregroundGravity="center_horizontal"
                     android:text="You can measure and track your subjective level of discomfort, by using the medically standarized method THI (Tinnitus Handicap Inventory)"
                     android:textAppearance="@style/AppTheme2"
@@ -276,7 +325,7 @@
                     android:layout_marginStart="24dp"
                     android:layout_marginEnd="20dp"
                     android:layout_marginBottom="20dp"
-                    android:alpha="0.6"
+                    android:alpha="1"
                     android:foregroundGravity="center_horizontal"
                     android:text="We will also add the possibility to measure SOC (Sense of Coherence) to track how you are coping with your tinnitus"
                     android:textAppearance="@style/AppTheme2"
